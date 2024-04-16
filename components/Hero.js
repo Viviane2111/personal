@@ -10,47 +10,45 @@ function Hero() {
     setDate(new Date());
   }, []);
   return (
-    <div>
-      <div id="hero" className={styles.hero}>
-        <main className={styles.main}>
-          <div className={styles.date}>
-            <Moment date={date} format="D MMM YYYY" locale="fr" />
+    <div id="hero" className={styles.hero}>
+      <main className={styles.main}>
+        <div className={styles.date}>
+          <Moment date={date} format="D MMM YYYY" locale="fr" />
+        </div>
+        <div className={styles.page}>
+          <div className={styles.heroImage}>
+            <Image
+              className={styles.image}
+              src="/moi3.png"
+              alt="Image de Viviane"
+              width={240}
+              height={236}
+            />
           </div>
-          <div className={styles.page}>
-            <div className={styles.heroImage}>
+
+          <div className={styles.container}>
+            <div>
               <Image
-                className={styles.image}
-                src="/moi3.png"
-                alt="Image de Viviane"
-                width={240}
-                height={236}
+                className={styles.hi}
+                src="/waving-hi.gif"
+                alt="gif animé qui fait coucou"
+                width={60}
+                height={60}
               />
             </div>
-
-            <div className={styles.container}>
-              <div>
-                <Image
-                  className={styles.hi}
-                  src="/waving-hi.gif"
-                  alt="gif animé qui fait coucou"
-                  width={60}
-                  height={60}
-                />
-              </div>
-              <h1 className={styles.title}>Hello, je suis Viviane SCHOMMERS</h1>
-              <p className={styles.description}>
-                Développeuse web & mobile full stack. En reconversion, mon
-                expérience professionnelle est à votre service.
-              </p>
-            </div>
+            <h1 className={styles.title}>Hello, je suis Viviane SCHOMMERS</h1>
+            <p className={styles.description}>
+              Développeuse web & mobile full stack. En reconversion, mon
+              expérience professionnelle est à votre service.
+            </p>
           </div>
-          <div style={{"margin": "2rem"}}>
-            <a href="/CV-revu7.pdf" className={styles.button}>
-              Voir mon CV
-            </a>
-          </div>
-        </main>
-      </div>
+        </div>
+        <div style={{ margin: "2rem" }}>
+          <a href="/CV-revu7.pdf" className={styles.button}>
+            Voir mon CV
+          </a>
+        </div>
+      </main>
     </div>
   );
 }

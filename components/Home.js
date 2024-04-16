@@ -1,3 +1,4 @@
+import styles from "../styles/Home.module.css"
 import Head from "next/head";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -14,7 +15,7 @@ function Home() {
         <meta name="description" content="Personal portfolio website" />
       </Head>
       <Header />
-      <div>
+      <div className={styles.main}>
         <Hero />
         <Portfolio />
         <School />

@@ -10,20 +10,6 @@ function CardComp({
 }) {
   return (
     <div>
-      {/* <div style={styles.card}> */}
-      {/* <div style={styles.textContent}>
-        <h3 style={styles.title}>{title}</h3>
-        <p style={styles.description}>{description}</p>
-      </div>
-      <div style={styles.imageBox}>
-        <Image
-          style={styles.image}
-          src={imageSrc}
-          alt={imageAlt}
-          width={imageWidth}
-          height={imageHeight}
-        />
-      </div> */}
       <a
         href={siteLink}
         target="_blank"
