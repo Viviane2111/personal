@@ -42,7 +42,7 @@ const styles = {
     flexDirection: "row",
     margin: "10px 0 10px 0",
     borderRadius: "12px",
-    boxShadow: "#666 5px 5px 0px",
+    boxShadow: "#aaa 5px 5px 0px",
     cursor: "pointer",
   },
   textContent: {

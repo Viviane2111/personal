@@ -45,7 +45,7 @@ function Portfolio() {
           imageWidth={239}
           imageHeight={210}
         />
-        <TopButtonComp color="#005BCD" />
+        <TopButtonComp background="#005BCD" color="#FFFFFF" />
       </main>
     </div>
   );

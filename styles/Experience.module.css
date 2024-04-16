@@ -2,5 +2,92 @@
    width: 100%;
    min-height: 100vh;
    padding-top: 78px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
    background-color: #fff7dd;
+   border: 1px solid;
 }
+.lines {}
+.timeline {
+   width: 80vw;
+   display: flex;
+   flex-direction: column;
+   padding: 30px 10px;
+   position: relative;
+   /* border: 1px solid; */
+}
+/* ligne du milieu */
+.timeline::before {
+   content: "";
+   position: absolute;
+   width: 5px;
+   background: #fccd2e;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+   margin-left: -2.5px;
+}
+.timeline > li {
+   margin-bottom: 20px;
+   position: relative;
+}
+.timeline > li:after{
+    clear: both;
+}
+.timeline > li:before, .timeline > li:after{
+    content: " ";
+    display: table;
+}
+.timelineBadge{
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -26px;
+    background-color: #fccd2e;
+    border-radius: 50%;
+}
+.div {
+   width: 50%;
+   content: "";
+}
+.cardContent1 {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   /* border: 1px solid; */
+}
+.cardContent2 {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   /* border: 1px solid; */
+}
+.cardBox1, .cardBox2 {
+   width: 50%;
+   display: flex;
+   padding: 0 20px;
+}
+.cardBox1 {
+   justify-content: flex-start;
+}
+.cardBox2 {
+   justify-content: flex-end;
+}
+
+
+.timelineBadge {}
+
+
+/* 
+xs < 576px
+sm >= 576px
+md >= 768px
+lg >= 992px
+xl >= 1200px
+xxl >= 1600px
+ */

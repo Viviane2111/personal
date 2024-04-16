@@ -37,8 +37,7 @@ function School() {
           />
         </div>
         <div className={styles.button}>
-          {/* <TopButtonComp /> */}
-          <TopButtonComp color="#F22B30" />
+          <TopButtonComp background="#F22B30" color="#FFFFFF" />
         </div>
       </main>
     </div>
