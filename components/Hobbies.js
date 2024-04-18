@@ -5,6 +5,7 @@ function Hobbies() {
     <div id="hobbies" className={styles.hobbies}>
       <main className={styles.main}>
         <h1>Hobbies</h1>
+        
       </main>
     </div>
   );

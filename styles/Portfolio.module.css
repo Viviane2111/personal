@@ -4,14 +4,46 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* justify-content: space-between; */
    justify-content: center;
    padding-top: 78px;
+   justify-content: center;
+   background: url("/red.jpg") no-repeat;
+   background-size: cover;
 }
-
 .title {
-   margin-top: 25px;
-   padding: 20px;
+   margin-top: 0px;
+   padding: 0px 0 50px 0;
+   color: #fff;
+}
+.links {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   color: #fff;
+   cursor: pointer;
+}
+.links a {
+   width: 70px;
+   height: 30px;
+   text-align: center;
+   padding: 3px;
+   background-color: #fccd2e;
+   border-radius: 12px;
+   box-shadow: #010101 5px 5px 0px;
+}
+.liks:hover {
+
 }
 
-
+@media screen and (min-width: 886px){
+   .card {
+      width: 750px;
+      /* border: 2px solid #fff; */
+   }
+}
+@media screen and (max-width: 576px){
+   .card {
+      /* max-width: 99vw; */
+      /* border: 2px solid #fff; */
+   }
+}

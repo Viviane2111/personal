@@ -30,7 +30,7 @@ function Hero() {
             <div>
               <Image
                 className={styles.hi}
-                src="/waving-hi.gif"
+                src="/hi2.gif"
                 alt="gif animé qui fait coucou"
                 width={60}
                 height={60}

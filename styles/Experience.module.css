@@ -6,19 +6,22 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: #fff7dd;
-   border: 1px solid;
+   background: url("/red.jpg") no-repeat;
+   background-size: cover;
+   border-top: 1px solid;
 }
-.lines {}
+.h1 {
+   color: #fff;
+}
 .timeline {
-   width: 80vw;
+   width: 100vw;
    display: flex;
    flex-direction: column;
    padding: 30px 10px;
    position: relative;
-   /* border: 1px solid; */
 }
-/* ligne du milieu */
+
+/** ligne du milieu */
 .timeline::before {
    content: "";
    position: absolute;
@@ -28,6 +31,7 @@
    bottom: 0;
    left: 50%;
    margin-left: -2.5px;
+   transition:all 0.2s ease;
 }
 .timeline > li {
    margin-bottom: 20px;
@@ -40,7 +44,7 @@
     content: " ";
     display: table;
 }
-.timelineBadge{
+.timelineBadge, .timelineBadge1{
     width: 50px;
     line-height: 50px;
     text-align: center;
@@ -48,25 +52,26 @@
     top: 16px;
     left: 50%;
     margin-left: -26px;
-    background-color: #fccd2e;
     border-radius: 50%;
+    transition:left 0.2s ease;
+   }
+.timelineBadge{
+   background-color: #fccd2e;
+}
+.timelineBadge1{
+   background-color: #fff;
 }
 .div {
    width: 50%;
    content: "";
 }
-.cardContent1 {
+.cardContent1, .cardContent2 {
    width: 100%;
    display: flex;
    justify-content: center;
-   /* border: 1px solid; */
+   transition:left 0.2s ease;
 }
-.cardContent2 {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   /* border: 1px solid; */
-}
+
 .cardBox1, .cardBox2 {
    width: 50%;
    display: flex;
@@ -79,15 +84,38 @@
    justify-content: flex-end;
 }
 
-
-.timelineBadge {}
-
-
-/* 
-xs < 576px
-sm >= 576px
-md >= 768px
-lg >= 992px
-xl >= 1200px
-xxl >= 1600px
- */
+@media screen and (max-width: 768px) {
+   .timeline {
+      justify-content: center;
+      align-items: center;
+   }
+   .div {
+      width: 0;
+   }
+   .cardBox1, .cardBox2 {
+   width: 100%;
+   display: flex;
+   flex: start;
+   padding: 0 20px;
+   }
+   .cardBox1 {
+      justify-content: flex-end;
+   }
+   .cardBox2 {
+      justify-content: flex-end;
+   }
+   .timeline::before {
+      width: 0;
+   }
+   .timelineBadge{
+    left: 100%;
+    top: 35%;
+   }
+}
+@media screen and (max-width: 514px) {
+   .timelineBadge{
+      width: 0;
+      display: none;
+   }
+   
+}

@@ -1,3 +1,4 @@
+
 .main {
    width: 100vw;
    min-height: 100vh;
@@ -6,6 +7,9 @@
    align-items: center; 
    justify-content: space-between;
    padding-top: 78px;
+   background: url("/yellow.jpg") no-repeat;
+   background-size: cover;
+   border-top: 1px solid;
 }
 .cards {
    display: flex;
@@ -13,7 +17,13 @@
    justify-content: center;
    flex-wrap:wrap;
    gap: 20px;
+   z-index: 10;
 }
 .button {
    margin-top: 20px;
+}
+@media screen and (max-width: 1194px) {
+   .title {
+      margin-bottom: 50px;
+   }
 }

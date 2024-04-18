@@ -18,7 +18,7 @@ function CardStudie({
     setIsHovered(false);
   };
 
-  // Animation keyframes
+  // animation de la petite ligne
   const keyframes = `
     @keyframes animate {
       from {
@@ -44,8 +44,8 @@ function CardStudie({
       backgroundColor: "#fff",
       borderRadius: "18px",
       boxShadow: "#aaa 7px 6px 0px",
-      // boxShadow: "#010101 9px 9px 0px",
-      border: "5px solid #F22B30",
+      boxShadow: "#010101 9px 9px 0px",
+      // border: "5px solid #F22B30",
       margin: "0 20px",
       cursor: "pointer",
       transition: "transform 0.3s ease-in-out",
