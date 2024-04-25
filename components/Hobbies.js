@@ -1,4 +1,3 @@
-// import React from "react";
 import styles from "../styles/Hobbies.module.css";
 import TopButtonComp from "./extras/TopButtonComp";
 import { useState } from "react";
@@ -9,11 +8,6 @@ function Hobbies() {
   return (
     <div id="hobbies" className={styles.hobbies}>
       <main className={styles.main}>
-        {/* <div className={styles.section}>
-          <div className={styles.carousel}>
-            <Slider />
-          </div>
-        </div> */}
         <div className={styles.footer}>
           <h1 className={styles.h1}>Contact</h1>
             <p className={styles.description}>

@@ -10,7 +10,6 @@ function CardStudie({
   skill3,
 }) {
   const [isHovered, setIsHovered] = useState(false);
-
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -30,7 +29,6 @@ function CardStudie({
     }
   `;
 
-  // Objet contenant plusieurs objets de style
   const styles = {
     card: {
       width: "345px",
@@ -45,11 +43,10 @@ function CardStudie({
       borderRadius: "18px",
       boxShadow: "#aaa 7px 6px 0px",
       boxShadow: "#010101 9px 9px 0px",
-      // border: "5px solid #F22B30",
       margin: "0 20px",
       cursor: "pointer",
       transition: "transform 0.3s ease-in-out",
-      transform: isHovered ? "translateY(-30px)" : "translateY(0)",
+      transform: isHovered ? "translateY(-10px)" : "translateY(0)",
       position: "relative",
     },
     heading: {
@@ -86,9 +83,8 @@ function CardStudie({
     },
     line: {
       position: "absolute",
-      // bottom: "37%",
-      left: "50%", // Centre la ligne horizontalement
-      transform: "translateX(-50%)", // Ajuste la position horizontale au centre
+      left: "50%",
+      transform: "translateX(-50%)",
       width: "100px",
       height: "4px",
       borderRadius: "5px",
@@ -138,17 +134,6 @@ function CardStudie({
       </div>
     </div>
   );
-  /* using component :
-      <CardStudie 
-         date=""
-         title=""
-         description=""
-         subtitle=""
-         skill1=""
-         skill2=""
-         skill3=""
-      />
-  */
 }
 
 export default CardStudie;

@@ -107,15 +107,14 @@
    .timeline::before {
       width: 0;
    }
-   .timelineBadge{
+   .timelineBadge, .timelineBadge1{
     left: 100%;
     top: 35%;
    }
 }
 @media screen and (max-width: 514px) {
-   .timelineBadge{
+   .timelineBadge, .timelineBadge1{
       width: 0;
       display: none;
    }
-   
 }

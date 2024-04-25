@@ -1,7 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 function TopButtonComp({background, color, icon}) {
+  const [isHovered, setIsHovered] = useState(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   // scroll en douceur
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -22,10 +29,16 @@ function TopButtonComp({background, color, icon}) {
     cursor: "pointer",
     marginBottom: "10px",
     boxShadow: "#010101 4px 4px 0px",
+    transition: "transform 0.25s ease-in-out",
+    transform: isHovered ? "scale(1.1)" : "scale(1)",
   };
 
   return (
-    <div style={styles}>
+    <div
+      style={styles}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <a href="#" onClick={(e) => scrollToSection(e, "hero")}>
         <FontAwesomeIcon
           icon={icon}
@@ -35,6 +48,5 @@ function TopButtonComp({background, color, icon}) {
     </div>
   );
 }
-
 
 export default TopButtonComp;

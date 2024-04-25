@@ -24,7 +24,6 @@ function CardExp({
       boxShadow: "#010101 7px 6px 0px",
       margin: "10px 20px",
       padding: "0px 0px 0px 10px",
-      // position: "absolute",
     },
     h2: {
       color: "#F22B30",

@@ -6,9 +6,12 @@
    align-items: center;
    justify-content: center;
    padding-top: 78px;
-   justify-content: center;
    background: url("/red.jpg") no-repeat;
    background-size: cover;
+}
+.card {
+   /* width: 800px;
+   margin: auto; */
 }
 .title {
    margin-top: 0px;
@@ -31,7 +34,7 @@
    border-radius: 12px;
    box-shadow: #010101 5px 5px 0px;
 }
-.liks:hover {
+.links:hover {
 
 }
 .technos:hover {
@@ -41,12 +44,10 @@
 @media screen and (min-width: 886px){
    .card {
       width: 750px;
-      /* border: 2px solid #fff; */
    }
 }
 @media screen and (max-width: 576px){
    .card {
-      /* max-width: 99vw; */
-      /* border: 2px solid #fff; */
+      width: 350px;
    }
 }

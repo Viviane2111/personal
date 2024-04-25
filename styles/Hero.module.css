@@ -25,9 +25,9 @@
   padding: 20px;
 }
 .heroImage {
-  background-color: #666;
+  background-color: #010101;
   border-radius: 16px;
-  box-shadow: #666 7px 4px 0px;
+  box-shadow: #010101 7px 4px 0px;
 }
 .image {
   border-radius: 12px;
@@ -51,29 +51,26 @@
 .title:hover {
   transform: scale(1.2) translateY(-5px);
 }
-
-  /* Animation keyframes*/
-@keyframes animate {
-  /* from {
-    left: 0%;
-  }
-  to {
-    left: 100%;
-  } */
-}
   
 .description {
   width: 100%;
   color: #fff;
+  font-size: 1.8vh;
 }
 .button {
 border: 1px solid #FCCD2E;
 background: #FCCD2E;
 padding: 18px 60px;
 border-radius: 12px;
-box-shadow: #666 5px 5px 0px;
+box-shadow: #010101 5px 5px 0px;
 font-size: 1.2em;
 cursor: pointer;
+transition: all 0.25s ease-in;
+}
+.button:hover {
+  background: #010101;
+  color: #fccd2e;
+  border: none;
 }
 
 @media screen and (max-width: 596px) {
@@ -82,17 +79,18 @@ cursor: pointer;
     justify-content: center;
   }
   .hero img {
-    height: 80%;
-    margin: 80px 10px;
+    height: 60%;
     text-align: center;
   }
   .title {
-    font-size: 2vh;
+    font-size: 2.4vh;
   }
   .container {
     text-align: center;
+    padding: 60px 0;
   }
   .description {
     text-align: center;
+    font-size: 2.1vh;
   }
 }

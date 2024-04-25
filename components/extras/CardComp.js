@@ -1,3 +1,4 @@
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -21,7 +22,11 @@ function CardComp({
     };
 
   const styles = {
+    container: {
+      Width: "100vw",
+    },
     card: {
+
       border: "1px solid #fff7dd",
       fontSise: "",
       background: "#fff7dd",
@@ -68,7 +73,7 @@ function CardComp({
   };
 
     return (
-      <div>
+      <div className={styles.container}>
         <a
           href={siteLink}
           target="_blank"
