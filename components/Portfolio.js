@@ -1,5 +1,4 @@
 import styles from "../styles/Portfolio.module.css";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import TopButtonComp from "./extras/TopButtonComp";
@@ -16,6 +15,7 @@ function Portfolio() {
           <CardComp
             title="Mymoviz"
             description="Retrouvez vos films préférés du moment. Notez, likez et retrouvez les dans votre liste."
+            technos="React - NextJS - ExpressJS"
             imageSrc="/mymoviz1.png"
             imageAlt="apperçu du projet Mymoviz - images de films"
             imageWidth={239}
@@ -35,6 +35,7 @@ function Portfolio() {
           <CardComp
             title="QR Code generation"
             description="Créer votre QR code personnalisé."
+            technos="JavaScript - HTML - CSS"
             imageSrc="/QRCode.png"
             imageAlt="apperçu du projet Mymoviz - images de films"
             imageWidth={239}
@@ -55,6 +56,7 @@ function Portfolio() {
           <CardComp
             title="QR Code generation"
             description="Trouvez le temps qu'il fait partout dans le monde."
+            technos="JavaScript - HTML - CSS"
             imageSrc="/weatherApp.png"
             imageAlt="apperçu du projet WeatherApp"
             imageWidth={239}
@@ -77,6 +79,7 @@ function Portfolio() {
             description="Quelques animations pour le plaisir : 
             Animation du système solaire, et un coeur qui bat ...
             "
+            technos="JavaScript - HTML - CSS"
             imageSrc="/projet2.png"
             imageAlt="image de projets d'animation"
             imageWidth={190}
@@ -94,7 +97,11 @@ function Portfolio() {
             </a>
           </div>
         </div>
-        <TopButtonComp background="#005BCD" color="#FFFFFF" />
+        <TopButtonComp
+          background="#005BCD"
+          color="#FFFFFF"
+          icon={faChevronUp}
+        />
       </main>
     </div>
   );

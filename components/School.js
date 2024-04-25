@@ -1,6 +1,7 @@
 import styles from "../styles/School.module.css";
 import CardStudie from "./extras/CardStudie";
 import TopButtonComp from "./extras/TopButtonComp";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 function School() {
   return (
@@ -37,7 +38,11 @@ function School() {
           />
         </div>
         <div className={styles.button}>
-          <TopButtonComp background="#F22B30" color="#FFFFFF" />
+          <TopButtonComp
+            background="#F22B30"
+            color="#FFFFFF"
+            icon={faChevronUp}
+          />
         </div>
       </main>
     </div>

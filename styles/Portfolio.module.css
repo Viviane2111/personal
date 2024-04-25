@@ -34,6 +34,9 @@
 .liks:hover {
 
 }
+.technos:hover {
+   background: "#005BCD",
+}
 
 @media screen and (min-width: 886px){
    .card {

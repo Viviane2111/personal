@@ -1,6 +1,6 @@
 import styles from "../styles/Experience.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faBriefcase, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import TopButtonComp from "./extras/TopButtonComp"; // composant bouton
 import CardExp from "./extras/CardExp"; // composant card
 
@@ -112,7 +112,11 @@ function Experience() {
 
         <div></div>
         <div>
-          <TopButtonComp background="#FCCD2E" color="#010101" />
+          <TopButtonComp
+            background="#FCCD2E"
+            color="#010101"
+            icon={faChevronUp}
+          />
         </div>
       </main>
     </div>

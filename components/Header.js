@@ -67,11 +67,11 @@ function Header() {
         </li>
         <li className={[styles.navbarItem, styles.slideInDown5].join(" ")}>
           <a
-            href="#hobbies"
+            href="#contact"
             onClick={(e) => scrollToSection(e, "hobbies")}
             className={styles.navbar__link}
           >
-            Loisirs
+            Contact
           </a>
         </li>
       </ul>

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+// import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-function TopButtonComp({background, color}) {
+function TopButtonComp({background, color, icon}) {
   // scroll en douceur
   const scrollToSection = (e, id) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ function TopButtonComp({background, color}) {
     <div style={styles}>
       <a href="#" onClick={(e) => scrollToSection(e, "hero")}>
         <FontAwesomeIcon
-          icon={faChevronUp}
+          icon={icon}
           style={{ color: color, fontSize: "24px" }}
         />
       </a>
