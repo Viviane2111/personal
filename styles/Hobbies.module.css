@@ -1,6 +1,6 @@
 .main {
    width: 100vw;
-   height: 100vh;
+   min-height: 100%;
    padding-top: 78px;
    background-image: url("/bleu.jpg");
    position: center;
@@ -8,15 +8,17 @@
    background-size: cover;
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
-   align-items: center;
+   /* justify-content: space-between; */
+   /* align-items: center; */
+   /* gap: 30px; */
    border-top: 1px solid;
    position: relative;
 }
-.h1 {
+.h2 {
    padding: 0px 0 0px 0;
-   text-shadow: #000 1px 0 0px;
+   text-shadow: #000 2px 2px 2px;
    color: #0049a1;
+   font-size: 2.0rem;
 }
 .btn {
    margin-bottom: 20px;
@@ -24,11 +26,12 @@
 
 .footer {
    width: 100%;
-   height: 100%;
+   max-height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-around;
+   /* justify-content: space-around; */
+   /* gap: 30px; */
    bottom: 0;
    text-align: center;
    text-shadow: #000 1px 0 1px;
@@ -38,7 +41,9 @@
    text-shadow: #000 2px 6px 8px;
    width: 80vw;
    height: auto;
-   padding: 20px 0 20px 0;
+   padding: 10px 0 10px 0;
+   font-size: 1.0rem;
+   display: inline-block;
 }
 .button {
    background: #010101;
@@ -50,11 +55,31 @@
    font-size: 1.2em;
    cursor: pointer;
    transition: color 0.3s ease-in-out;
+   /* margin-top: 50px; */
 }
 .button:hover {
    color: #fccd2e;
    border: none;
 }
+.btn {
+   margin-top: 30px;
+}
+/* @media screen and (min-width: 769px){
+   .h2 {
 
+      font-size: 2.0rem;
+   }
+   .description {
+    font-size: 1.0rem;
+   }
+}
+@media screen and (max-width: 768px) {
+      .h2 {
 
+      font-size: 2.0rem;
+   }
+   .description {
+    font-size: 1.0rem;
+   }
+} */
 

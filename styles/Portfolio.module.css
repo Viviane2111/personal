@@ -9,14 +9,16 @@
    background: url("/red.jpg") no-repeat;
    background-size: cover;
 }
-.card {
-   /* width: 800px;
-   margin: auto; */
-}
 .title {
    margin-top: 0px;
    padding: 0px 0 50px 0;
    color: #fff;
+}
+.h2 {
+   padding: 0px 0 20px 0;
+   text-shadow: #000 2px 2px 3px;
+   color: #fff7dd;
+   font-size: 2rem;
 }
 .links {
    display: flex;
@@ -34,9 +36,6 @@
    border-radius: 12px;
    box-shadow: #010101 5px 5px 0px;
 }
-.links:hover {
-
-}
 .technos:hover {
    background: "#005BCD",
 }
@@ -44,6 +43,12 @@
 @media screen and (min-width: 886px){
    .card {
       width: 750px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .h2 {
+      font-size: 2.2rem;
+      padding-bottom: 50px;
    }
 }
 @media screen and (max-width: 576px){

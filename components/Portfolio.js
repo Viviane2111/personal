@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <div id="portfolio" className={styles.portfolio}>
       <main className={styles.main}>
-        <h2 className={styles.title}>Mes réalisations</h2>
+        <h2 className={styles.h2}>Mes réalisations</h2>
 
         <div className={styles.card}>
           <CardComp

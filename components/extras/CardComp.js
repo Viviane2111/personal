@@ -26,7 +26,6 @@ function CardComp({
       Width: "100vw",
     },
     card: {
-
       border: "1px solid #fff7dd",
       fontSise: "",
       background: "#fff7dd",

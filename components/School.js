@@ -7,7 +7,7 @@ function School() {
   return (
     <div id="school" className={styles.school}>
       <main className={styles.main}>
-        <h1 className={styles.title}>Mes formations</h1>
+        <h1 className={styles.h2}>Mes formations</h1>
         <div className={styles.cards}>
           <CardStudie
             date="1994 - 1999"

@@ -12,7 +12,7 @@ function Experience() {
   return (
     <div id="experience" className={styles.experience}>
       <main className={styles.main}>
-        <h1 className={styles.h1}>Mes experiences</h1>
+        <h2 className={styles.h2}>Mes experiences</h2>
         <div className={styles.lines}>
           <ul className={styles.timeline}>
             <li>
