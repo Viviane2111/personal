@@ -39,7 +39,7 @@ function TopButtonComp({background, color, icon}) {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <a href="#" onClick={(e) => scrollToSection(e, "hero")}>
+      <a href="#" onClick={(e) => scrollToSection(e, "hero")} aria-label="Aller tout en haut">
         <FontAwesomeIcon
           icon={icon}
           style={{ color: color, fontSize: "24px" }}

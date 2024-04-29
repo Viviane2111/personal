@@ -63,10 +63,10 @@ function CardHobbie() {
         duration-500"
       >
         <div className="flex flex-col items-center w-[70vw]">
-          <h3 className="text-center bg-slate-900 bg-opacity-50 w-[250px] text-stone-100">
+          <h3 className="text-center bg-slate-900 bg-opacity-70 w-[250px] text-stone-100">
             {slides[currentIndex].title}
           </h3>
-          <p className="bg-slate-900 bg-opacity-50 w-[250px] text-stone-100 mt-0 ">
+          <p className="bg-slate-900 bg-opacity-70 w-[250px] text-stone-100 mt-0 ">
             {slides[currentIndex].description}
           </p>
         </div>
@@ -78,7 +78,7 @@ function CardHobbie() {
          absolute 
          top-[50%] -translate-x-0 translate-y-[-50%] 
          left-5 text-xl
-         rounded-[50%] p-2 bg-black/50
+         rounded-[50%] p-2 bg-black/80
          text-white cursor-pointer"
       >
         <FontAwesomeIcon onClick={prevSlide} icon={faChevronLeft} size="l" />
@@ -90,7 +90,7 @@ function CardHobbie() {
          absolute 
          top-[50%] -translate-x-0 translate-y-[-50%] 
          right-5 text-xl
-         rounded-[50%] p-2 bg-black/50
+         rounded-[50%] p-2 bg-black/80
          text-white cursor-pointer"
       >
         <FontAwesomeIcon onClick={nextSlide} icon={faChevronRight} size="l" />

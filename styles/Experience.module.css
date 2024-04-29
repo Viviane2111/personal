@@ -6,8 +6,9 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background: url("/red.jpg") no-repeat;
+   background: url("/red1.png") no-repeat;
    background-size: cover;
+   background-position: center;
    border-top: 1px solid;
 }
 .h1 {

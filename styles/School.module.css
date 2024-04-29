@@ -7,17 +7,22 @@
    align-items: center; 
    justify-content: space-between;
    padding-top: 78px;
-   background: url("/yellow.jpg") no-repeat;
+   background: url("/yellow2.png") no-repeat; 
    background-size: cover;
    border-top: 1px solid;
 }
 .h2 {
    padding: 0px 0 0px 0;
-   text-shadow: #000 2px 2px 3px;
    color: #F22B30;
    font-size: 2rem;
+   font-weight: 900;
+   width: 35vw;
+   background-color: #141300;
+   border-radius: 12px;
+   /* position: absolute; */
 }
 .cards {
+   margin-top: 52px;
    display: flex;
    flex-direction: row;
    justify-content: center;

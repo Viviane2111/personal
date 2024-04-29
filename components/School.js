@@ -7,7 +7,22 @@ function School() {
   return (
     <div id="school" className={styles.school}>
       <main className={styles.main}>
-        <h1 className={styles.h2}>Mes formations</h1>
+        <h1 className={styles.h2}
+        >
+          <div className={styles.spans}>
+            Mes{" "}
+            <span>f</span>
+            <span>o</span>
+            <span>r</span>
+            <span>m</span>
+            <span>a</span>
+            <span>t</span>
+            <span>i</span>
+            <span>o</span>
+            <span>n</span>
+            <span>s</span>
+          </div>
+        </h1>
         <div className={styles.cards}>
           <CardStudie
             date="1994 - 1999"

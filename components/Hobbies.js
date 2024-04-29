@@ -15,7 +15,7 @@ function Hobbies() {
           <div className={styles.hobbies}>
             <CardHobbie />
           </div>
-          <h2 className={styles.h2}>Contact</h2>
+          <h2 className={[styles.h2, styles.two].join(" ")}>Contact</h2>
           <div className={styles.description}>
             <span className={styles.description}>
               Je suis actuellement développeuse freelance sur Cagne-sur-mer.
@@ -30,9 +30,13 @@ function Hobbies() {
               Contactez-moi
             </a>
           </div>
-        <div className={styles.btn}>
-          <TopButtonComp background="#005bcd" color="#fff" icon={faChevronUp} />
-        </div>
+          <div className={styles.btn}>
+            <TopButtonComp
+              background="#fff"
+              color="#005bcd"
+              icon={faChevronUp}
+            />
+          </div>
         </div>
       </main>
     </div>

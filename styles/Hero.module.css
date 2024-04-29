@@ -1,7 +1,6 @@
 .main {
   min-height: 100vh;
   width: 100vw;
-  background-image: url("/blueBack.jpg");
   position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,6 +9,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 4rem 0;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/blueBack.jpg");
+  filter:brightness(45%);
 }
 .date {
   font-family: "Jersey 15", sans-serif;
@@ -25,6 +34,7 @@
   padding: 20px;
 }
 .heroImage {
+  position: relative;
   background-color: #010101;
   border-radius: 16px;
   box-shadow: #010101 7px 4px 0px;
@@ -33,6 +43,7 @@
   border-radius: 12px;
 }
 .container {
+  position: relative;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -58,6 +69,7 @@
   font-size: 1.8vh;
 }
 .button {
+position: relative;
 border: 1px solid #FCCD2E;
 background: #FCCD2E;
 padding: 18px 60px;

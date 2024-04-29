@@ -76,7 +76,7 @@ function Header() {
         </li>
       </ul>
       <button className={styles.navbar__burger} onClick={handdleOpenMenu}>
-        <span className={styles.burgerBar}></span>
+        <span className={styles.burgerBar} aria-label="bouton berger qui affiche le menu"></span>
       </button>
     </nav>
   );
