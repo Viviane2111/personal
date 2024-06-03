@@ -80,7 +80,7 @@ function Portfolio() {
             Animation du système solaire, et un coeur qui bat ...
             "
             technos="JavaScript - HTML - CSS"
-            imageSrc="/Anims.png"
+            imageSrc="/anims.png"
             imageAlt="image de projets d'animation"
             imageWidth={180}
             imageHeight={210}
