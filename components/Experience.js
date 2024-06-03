@@ -26,8 +26,8 @@ function Experience() {
                 <div className={styles.div}></div>
                 <div className={styles.cardBox1}>
                   <CardExp
-                    title="Administratio WEB"
-                    subTitle="Téléconseille"
+                    title="Administration WEB"
+                    subTitle="Téléconseil"
                     date="06/2023"
                     description1="Valisation de commandes"
                     description2="Renseignement clientèle"
@@ -95,7 +95,7 @@ function Experience() {
                 <div className={styles.cardBox2}>
                   <CardExp
                     title="Education"
-                    subTitle="Intervenante périscolaire Chef d'équipe animation"
+                    subTitle="Intervenante périscolaire - Chef d'équipe animation"
                     date="1992 - 2001"
                     description1="Mobilisation de l'enfant, suivi scolaire, médiation"
                     description2="Activités culturelles, artistiques et sportives"

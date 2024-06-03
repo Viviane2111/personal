@@ -21,7 +21,7 @@ function Hobbies() {
               Je suis actuellement développeuse freelance sur Cagne-sur-mer.
             </span>
             <span className={styles.description}>
-              Contactez moi pour toute demande de site web ou d'application
+              Contactez moi pour toutes demandes de site web ou d'application
               mobile.
             </span>
           </div>

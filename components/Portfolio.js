@@ -54,7 +54,7 @@ function Portfolio() {
 
         <div className={styles.card}>
           <CardComp
-            title="QR Code generation"
+            title="Weather app"
             description="Trouvez le temps qu'il fait partout dans le monde."
             technos="JavaScript - HTML - CSS"
             imageSrc="/weatherApp.png"
@@ -80,7 +80,7 @@ function Portfolio() {
             Animation du système solaire, et un coeur qui bat ...
             "
             technos="JavaScript - HTML - CSS"
-            imageSrc="/projet2.png"
+            imageSrc="/Anims.png"
             imageAlt="image de projets d'animation"
             imageWidth={190}
             imageHeight={210}
