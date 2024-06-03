@@ -6,7 +6,7 @@
    align-items: center;
    justify-content: center;
    padding-top: 78px;
-   background: url("/red1.png");
+   background: url("/imgBackground/red1.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -22,14 +22,25 @@
    color: #fff7dd;
    font-size: 2rem;
 }
-.links {
+.links, .link {
    display: flex;
    justify-content: space-around;
    align-items: center;
    color: #fff;
    cursor: pointer;
 }
-.links a {
+.links:hover {
+   transition: transform 0.25s ease-in-out;
+   transform: scale(1.19);
+}
+.link>a:first-child:hover,
+.link>a:last-child:hover
+ {
+   transition: transform 0.25s ease-in-out;
+   transform: scale(1.19);
+}
+
+.links a, .link a {
    width: 70px;
    height: 30px;
    text-align: center;

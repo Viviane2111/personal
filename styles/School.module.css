@@ -7,7 +7,7 @@
    align-items: center; 
    justify-content: space-between;
    padding-top: 78px;
-   background: url("/yellow2.png") no-repeat; 
+   background: url("/imgBackground/yellow2.png") no-repeat; 
    background-size: cover;
    border-top: 1px solid;
 }

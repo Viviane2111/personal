@@ -5,7 +5,7 @@ import TopButtonComp from "./extras/TopButtonComp";
 import CardComp from "./extras/CardComp";
 
 function Portfolio() {
-
+   
   return (
     <div id="portfolio" className={styles.portfolio}>
       <main className={styles.main}>
@@ -82,17 +82,22 @@ function Portfolio() {
             technos="JavaScript - HTML - CSS"
             imageSrc="/Anims.png"
             imageAlt="image de projets d'animation"
-            imageWidth={190}
+            imageWidth={180}
             imageHeight={210}
           />
-          <div className={styles.links}>
+          <div className={styles.link}>
             <a
               href="https://arrghe64.github.io/Animation-earthAndHart/"
               target="blank"
+              style={{ color: "#000", fontSize: "" }}
             >
               🌍 ❤️
             </a>
-            <a href="/analogClock/clock.html" target="blank">
+
+            <a
+              href="/analogClock/clock.html"
+              target="blank"
+            >
               ⏳ 🕒
             </a>
           </div>

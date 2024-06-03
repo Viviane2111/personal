@@ -2,7 +2,7 @@
    width: 100vw;
    min-height: 100%;
    padding-top: 78px;
-   background-image: url("/bleu.jpg");
+   background-image: url("/imgBackground/bleu.jpg");
    position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/blueBack.jpg");
+  background-image: url("/imgBackground/blueBack.jpg");
   filter:brightness(45%);
 }
 .h2 {
